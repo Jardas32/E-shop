@@ -1,0 +1,1035 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    height: 100vh;
+    display: grid; 
+    justify-content: center;
+}
+/* 
+.container {
+    background-color: rgba(0, 255, 255, 0.408);
+    width: 600px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}  */
+
+/* 
+.container h1 {
+    font-family: "Actor"
+} */
+/* 
+.input {
+    font-family: "Actor";
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 12px;
+} */
+/* 
+.container .ul li {
+    margin: 10px;
+    font-family: "Roboto";
+}
+
+.heen {
+    display: none;
+} */
+/* 
+.phone {
+   background-color: rgb(13, 58, 75); 
+   font-size: 18px;
+   color: #fafafa;
+}
+
+.phone td {
+    background-color: skyblue;
+    padding: 10px;
+    border: 1px solid rgb(108, 1, 1);
+    border-radius: 5px; 
+}
+
+.phone td[colspan] {
+    cursor: pointer;
+    background-color: red;
+    text-align: center;
+} */
+
+
+                           /* Карточки */
+
+:root {
+    --greenbg: rgb(4, 123, 128);
+    --darkmod: rgb(24, 37, 41);
+}
+
+.content {
+    position: relative;
+    background-color: skyblue;
+    width: 1920px;
+    height: 3400px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.4s ease;
+} 
+
+.darkmod {
+    background-color: var(--darkmod);
+}
+
+.content .header {
+    position: fixed;
+    top: 0px;
+    z-index: 1200;
+    width: 1920px;
+    height: 90px;
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo {
+    margin-left: 30px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.bground {
+    cursor: pointer;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    filter: drop-shadow(0 0 3px rgb(255, 255, 255));
+    width: 70px;
+    height: 35px;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.bgroundbila {
+    background-color: rgb(114, 114, 114);
+    filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0));
+}
+
+.bground .imgsun {
+    width: 30px;
+    margin-left: 5px;
+    margin-top: 2.5px;
+}
+
+.bground .imgmoon {
+    position: absolute;
+    top: 2.5px;
+    right: 3px;
+    width: 30px;
+    border-radius: 30px;
+}
+
+.spbg {
+    position: absolute;
+    top: 2.5px;
+    left: 5px;
+    background-color: rgb(255, 255, 255);
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    transition: all 0.4s;
+} 
+
+.spskyblue {
+    background-color: rgb(255, 255, 255);
+    left: 37px;
+}
+
+.spcount {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: rgb(214, 52, 52);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+.korzina {
+    position: relative;
+    cursor: pointer;
+    margin-right: 30px;
+    background-color: rgb(223, 223, 223);
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.korzinaimg {
+    width: 100%;
+}
+
+.korzina:hover {
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+
+.korzina .spancount {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: rgb(255, 255, 255);
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid red;
+}
+
+               /* Переключение колонок рядов */
+
+.elemgrid {
+    position: absolute;
+    left: 120px;
+    top: 150px;
+    width: 206px;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 176px 30px;
+    align-items: center;
+}
+
+.grids1 {
+    display: grid;
+    gap: 10px;
+}
+
+.pcolums {
+    color: rgb(244, 240, 240);
+    letter-spacing: 1px;
+    filter: drop-shadow(0 0 1px rgb(0, 0, 0));
+    font-weight: 300;
+}
+
+.grids2 {
+    display: grid;
+    justify-content: center;
+    row-gap: 5px;
+}
+
+.div3 {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 30px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div3 span {
+    background-color: rgb(0, 0, 0);
+    width: 1px;
+    height: 25px;
+}
+
+.div3 .spacentr {
+    position: absolute;
+    top: -3px;
+    left: 15px;
+    transform: rotate(90deg);
+    height: 30px;
+}
+
+.div4 {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 30px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div4 span {
+    background-color: rgb(0, 0, 0);
+    width: 1px;
+    height: 25px;
+}
+
+.div4 .spacentr {
+    background-color: black;
+    position: absolute;
+    top: -3px;
+    left: 15px;
+    transform: rotate(90deg);
+    height: 30px;
+}
+
+            /* Навигация категория */
+
+.navigation {
+    width: 900px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.navigation nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+}
+
+nav ul li {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-family: "Roboto";
+    font-weight: 500;
+    border-radius: 30px;
+    list-style: none;
+    letter-spacing: 2px;
+    color: rgb(214, 234, 221);
+    transition: all 0.3s;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+}
+   
+.card.watch {
+    border: 3px solid rgb(37, 179, 37);
+}
+  
+.card.computers {
+    border: 3px solid blue;
+}
+  
+.card.tablets {
+    border: 3px solid rgb(150, 6, 186);
+}
+  
+.card.laptops {
+    border: 3px solid rgb(192, 116, 16);
+}
+  
+.card.phones {
+    border: 3px solid rgb(222, 201, 12);
+}
+  
+.card.headphones {
+    border: 3px solid red;
+}
+
+         /* Цвет текста навигатора */
+
+.text-phones {
+    color: rgb(222, 201, 12);
+}
+
+.text-laptops {
+    color: rgb(192, 116, 16);
+}
+
+.text-watch {
+    color: rgb(37, 179, 37);
+}
+
+.text-headphones {
+    color: red;
+}
+
+.text-computers {
+    color: rgb(99, 136, 255);
+}
+
+.text-tablets {
+    color: rgb(150, 6, 186);
+}
+
+.hide {
+    display: none;
+}
+
+.active {
+    background-color: rgb(72, 72, 72);
+    color: rgb(255, 255, 255);
+}
+
+               /* Корзина */
+
+.korzbg {
+    display: grid;
+    background-color: rgb(232, 232, 232);
+    position: fixed;
+    top: 90px;
+    right: 0px;
+    z-index: 100;
+    width: 400px;
+    height: 644px;
+    border-radius: 5px;
+    transform: translateX(100%);
+    transition: all 0.4s ease;
+    filter: drop-shadow(0 0 3px rgb(0, 0, 0));
+}
+
+.korzblack {
+    background-color:  rgb(24, 37, 41);
+    filter: drop-shadow(0 0 3px rgb(114, 114, 114));
+}
+
+.klosed {
+    transform: translateX(100%);
+}
+
+.korzclosed {
+    transform: translateX(100%);
+}
+
+.korzopen {
+    transform: translateX(0);
+}
+
+.korz {
+    position: relative;
+    width: 400px;
+    height: 539px;
+    overflow-y: scroll;
+    margin-top: 46px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}  
+
+.korz::-webkit-scrollbar {
+    width: 1px;
+}  
+
+.divtitle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    width: 100%;
+    background-color: rgb(4, 123, 128);
+    display: grid;
+    align-items: center;
+}
+
+.divtitle .korztitle {
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 0px 10px 4px 10px;
+}
+
+.divtitle .divclosed {
+    position: absolute;
+    top: 5px;
+    left: 2.5px;
+    width: 140px;
+    height: 30px;
+    border-radius: 3px;
+    transition: all .3s;
+}
+
+.totalprice {
+    width: 100%;
+    font-size: 19px;
+    font-weight: 600;
+    color: rgb(2, 2, 2);
+    margin-top: 5px;
+}
+
+.totaldark {
+    color: rgb(255, 255, 255);
+}
+
+                   /* Карточка в корзине */
+
+.newcard {
+    display: flex;
+    align-items: center;
+    width: 385px;
+    height: 124px;
+    border-radius: 6px;
+    list-style: none;
+    margin-left: 7.5px; 
+    margin-top: 11px;
+} 
+
+.center {
+    margin-top: 150px;
+    width: 900px auto;
+    height: 900px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    row-gap: 30px;
+    column-gap: 0px;
+}
+
+.centergrid {
+    grid-template-columns: repeat(4, 300px);
+}
+
+.card {
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(190, 220, 248));
+    width: 250px;
+    height: 300px;
+    border-radius: 6px;
+    filter: drop-shadow(0 0 10px black);
+}
+
+.card .img1 {
+    filter: drop-shadow(0 0 2px rgb(255, 5, 243)); 
+    margin-left: 50px;
+    margin-top: 33px;
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.card .h2title {
+    font-family: "Roboto";
+    font-size: 20px;
+    color: rgba(32, 32, 32, 0.957);
+    font-weight: 700;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.card .ptext {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 60px;
+    text-align: center;
+    background-color: rgba(255, 228, 196, 0.493);
+    color: rgba(148, 138, 138, 0.897);
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    border-radius: 6px;
+}
+
+.card .pprice {
+    position: relative;
+    font-family: "Roboto";
+    border-radius: 3px;
+    width: 60px;
+    margin-left: 95px;
+    color: rgba(8, 8, 8, 0.801);
+    font-size: 19px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.card .pprice::before {
+    content: " ";
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    transform: rotate(-16deg); 
+}
+
+.card .salebg {
+    background-image: linear-gradient(to left, rgb(121, 121, 121),blue,skyblue,white,blue,black);
+    width: 63px;
+    height: 25px;
+    position: absolute;
+    top: 217px;
+    left: 88px;
+    border-radius: 45%;
+    animation: colors 1s alternate infinite;
+}
+
+@keyframes colors {
+    20% {
+        background-image: linear-gradient(to top, rgb(148, 148, 148));
+    }
+    40% {
+        background-image: linear-gradient(to top, rgb(105, 105, 105),blue);
+    }
+    60% {
+        background-image: linear-gradient(to top, rgb(117, 117, 117),blue,skyblue);
+    }
+    80% {
+        background-image: linear-gradient(to top, rgb(117, 117, 117),blue,skyblue,white);
+    }
+    100% {
+        background-image: linear-gradient(to bottom, rgb(117, 117, 117),blue,skyblue,white,blue,black);
+    }
+}
+
+.spposition {
+    position: absolute;
+    top: 1px;
+    right: 7px;
+    font-size: 19px;
+    font-weight: 600;
+    color: rgb(255, 9, 9);
+}
+
+.spanpos {
+    position: absolute;
+    right: 7px;
+    background-color: rgba(190, 190, 190, 0.473);
+    text-align: center;
+}
+
+.card .psale {
+    background-color: rgb(247, 255, 4); 
+    border-radius: 45%;
+    width: 60px;
+    color: rgb(255, 9, 9);
+    font-size: 19px;
+    font-weight: 600;
+    text-align: center; 
+    margin-top: 1.5px;  
+    margin-left: 1.3px; 
+}
+
+.card .btcart {
+    cursor: pointer;
+    margin-left: 200px; 
+    margin-top: 50px;
+    width: 30px;
+    height: 25px;
+    font-size: 20px;
+    background-color: rgb(106, 230, 82);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    transition: 0.3s;
+}
+
+.card .btcart:hover {
+    filter: drop-shadow(0 0 2px rgb(6, 6, 6));
+}
+           
+              /* Кнопка купить */
+
+.divbuy {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: var(--greenbg);
+    width: 100%;
+    height: 55px;
+    border-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* 
+.darkborder {
+    border-top: 1px solid rgb(255, 255, 255);
+} */
+
+.btbuy {
+    background-color: rgba(121, 2, 2, 0.998);
+    cursor: pointer;
+    width: 160px;
+    height: 40px;
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    font-family: "Actor";
+    letter-spacing: 2px;
+    border-radius: 30px;
+    border: none;
+    transition: all .3s;
+}
+
+.btbuy:hover {
+    background-color: rgba(162, 3, 3, 0.998);
+}
+
+          /* Карточка в корзине */
+
+.cart {
+    position: relative;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(190, 220, 248));
+    width: 100%;
+    height: 120px;
+    border-radius: 6px;
+    display: flex;
+    border: 2px solid rgb(189, 189, 189);
+    transition: all 0.3s ease;
+}
+
+.cart:hover {
+    border: 2px solid rgb(241, 5, 5);
+}
+
+.cartimg1 {
+    width: 110px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 5px;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.carttext {
+    width: 70px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 60px;
+    height: 20px;
+    text-align: center;
+    background-color: rgba(255, 228, 196, 0.493);
+    color: rgba(148, 138, 138, 0.897);
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    border-radius: 6px;
+}
+
+.carttitle {
+    margin-left: 5px;
+    width: 70px;
+    height: 45px;
+    font-family: "Roboto";
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    color: rgba(32, 32, 32, 0.957);
+    font-weight: 500;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cartprice {
+    position: relative;
+    font-family: "Roboto";
+    border-radius: 3px;
+    width: 60px;
+    height: 20px;
+    margin-left: 95px;
+    color: rgba(8, 8, 8, 0.801);
+    font-size: 19px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 35px;
+    margin-left: 25px;
+}
+
+.cartprice::before {
+    content: " ";
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    transform: rotate(-16deg); 
+}
+
+.cart .salebg {
+    background-image: linear-gradient(to right, rgb(255, 8, 8),rgb(214, 23, 23),rgb(171, 29, 242), rgb(255, 0, 111), rgb(238, 4, 255));
+    width: 64px;
+    height: 25px;
+    margin-top: 63px;
+    margin-left: -60px;
+    border-radius: 45%;
+    animation: colorss 1s alternate infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes colorss {
+    20% {
+        background-image: linear-gradient(to right, rgb(255, 8, 8));;
+    }
+    40% {
+        background-image: linear-gradient(to right, rgb(255, 8, 8),rgb(171, 29, 242));
+    }
+    60% {
+        background-image: linear-gradient(to right,rgb(171, 29, 242), rgb(255, 0, 111));
+    }
+    80% {
+        background-image: linear-gradient(to right, rgb(255, 8, 8),rgb(214, 23, 23),rgb(171, 29, 242), rgb(255, 0, 111), rgb(238, 4, 255));
+    }
+    100% {
+        background-image: linear-gradient(to left, rgb(255, 8, 8),rgb(214, 23, 23),rgb(171, 29, 242), rgb(255, 0, 111), rgb(238, 4, 255));
+    }
+} 
+
+.cart .sale {
+    background-color: rgb(247, 255, 4); 
+    border-radius: 45%;
+    width: 60px;
+    height: 20px;
+    color: rgb(255, 9, 9);
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.btclosed {
+    position: relative;
+    background-color: rgb(105, 102, 102);
+    cursor: pointer;
+    margin-left: 75px; 
+    margin-top: 94px; 
+    width: 22px;
+    height: 22px;
+    font-size: 20px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    transition: 0.3s ease-in;
+} 
+
+.btclosed:hover {
+    background-color: black;
+}
+
+.spa {
+    position: absolute;
+    top: 10.5px;
+    left: 3.5px;
+    background-color: rgb(255, 255, 255);
+    width: 15px;
+    height: 1px;
+}
+
+.spa1 {
+    transform: rotate(45deg);
+}
+
+.spa2 {
+    transform: rotate(-45deg);
+} 
+
+
+                 /* Счётчик карточки */
+
+.divcounts {
+    position: absolute;
+    right: 100px;
+    bottom: 18px;
+    margin-top: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    width: 60px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.bminus {
+    width: 20px;
+    height: 22px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(188, 188, 188, 0.185);
+    color: rgb(0, 0, 0);
+    transition: all 0.3s;
+}
+
+.inpcounts {
+    background-color: rgb(255, 255, 255);
+    width: 30px;
+    height: 21px;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+.bplus {
+    width: 20px;
+    height: 22px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(188, 188, 188, 0.185);
+    color: rgb(0, 0, 0);
+    transition: all 0.3s;
+}
+
+.divcounts button:hover {
+    background-color: rgba(188, 188, 188, 0.603);
+}
+
+             /* В корзине счётчик */
+
+.divcounters {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    margin-top: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    width: 60px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divcounters .inputcounts {
+    width: 30px;
+    height: 21px;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+.divcounters button {
+    width: 20px;
+    height: 22px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(188, 188, 188, 0.185);
+    color: rgb(0, 0, 0);
+    transition: all 0.3s;
+}
+
+.divcounters button:hover {
+    background-color: rgba(188, 188, 188, 0.603);
+}
+
+
+          /* Форма обратной связи */
+
+.popbg {
+    display: none; 
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.941);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+}
+
+.active {
+    display: grid;
+}
+
+.popup {
+    position: relative;
+    background-color: rgb(24, 37, 41);
+    width: 500px;
+    height: 400px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 0 5px rgb(250, 222, 222));
+}
+
+.popup form {
+    background-color: rgba(103, 101, 101, 0.121);
+    width: 400px;
+    height: 300px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 55px;
+}
+
+form .inp {
+    background-color: rgb(95, 95, 96);
+    width: 200px;
+    height: 22px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+    filter: drop-shadow(0 0 3px rgb(255, 255, 255));
+    transition: all 0.3s;
+}
+
+form .inp:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 20px rgb(255, 255, 255));
+}
+
+form .inp::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+form .inpsub {
+    cursor: pointer;
+    margin-left: 55px;
+    margin-top: 10px;
+    width: 100px;
+    height: 22px;
+    outline: none;
+    border-radius: 22px;
+    border: none;
+    filter: drop-shadow(0 0 3px rgb(2, 2, 2));
+    background-color: rgb(42, 201, 42);
+    transition: all 0.3s;
+}
+
+form .inpsub[value] {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+form .inpsub:hover {
+    background-color: rgb(0, 247, 0);
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 5px rgb(0, 0, 0));
+}
+
+form .inpsub[value]:hover {
+    color: rgb(255, 255, 255);
+}
+
+.closedpopup {
+    cursor: pointer;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    background-color: rgb(154, 154, 154);
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.closedpopup:hover {
+    background-color:  rgb(207, 207, 207);
+}
+
+.spans {
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    background-color: rgb(3, 3, 3);
+    width: 20px;
+    height: 1px;
+}
+         
+.spans1 {
+    transform: rotate(45deg);
+}
+       
+.spans2 {
+    transform: rotate(-45deg);
+} 
+
+
+
